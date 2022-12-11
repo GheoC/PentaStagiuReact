@@ -1,0 +1,7 @@
+in Terminal run following commands to start a React project:
+    npm init
+    npm i react react-dom react-scripts
+
+to Enable 'npm start':
+    add ("start": "react-scripts start") to package-json/scripts
+
