@@ -1,4 +1,5 @@
 # PentaStagiuReact
-    - Cursuri
+    - Courses:
+        - Course 01
     - Homework
     - Proiect
