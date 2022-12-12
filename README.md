@@ -1,4 +1,4 @@
 # PentaStagiuReact
-    - Cursuri
+    - Courses
     - Homework
     - Proiect
