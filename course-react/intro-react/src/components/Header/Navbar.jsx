@@ -1,6 +1,12 @@
-function Navbar(){
+import "./Navbar.css";
+
+function Navbar(props){
     return <>
-        <nav>Navbar From Component that is included in Header</nav>
+        <header className="nav-bar">
+            <div className="navigation-bar">{props.navigationTitle}</div>
+            <div className="logo-container">user: {props.user?.name}</div>
+            <button onClick={props.resetTitle}>Reset title</button>
+        </header>
     </>
 }
 
