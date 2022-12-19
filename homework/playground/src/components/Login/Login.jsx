@@ -9,12 +9,15 @@ function Login(props) {
     const [password, setPassword] = useState('');
 
 
-    function onSubmit() {
+    function onSubmit(e) {
+        e.preventDefault();
         debugger;
         const userInDB = users.find((u) => u.username === user);
 
-        if (userInDB === undefined) {
-            setToggleWrongCredentials(true)
+        if (userInDB === undefined || userInDB?.password !== password) {
+            setToggleWrongCredentials(true);
+            setUser('');
+            setPassword('');
         }
 
         if (userInDB?.password === password) {
